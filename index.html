@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./CSS/output.css">
+    <script src="./JavaScript/app.js" defer></script>
+    <title>Drum_kit javaScript</title>
+</head>
+<body class="min-h-screen w-full flex justify-center place-items-center bg-DJ_image_BG relative">
+    <section class="keys w-full flex justify-evenly place-items-center">
+        <div data-key="65" id="sound" class="text-3xl p-2 px-4 leading-6 rounded-[5px] bg-black bg-opacity-60 text-white border-4 border-black active:scale-[120%] cursor-pointer active:border-[rgb(212,212,90)] active:shadow-[2px_2px_50px_6px_rgb(212,212,90)] transition-all duration-[0.05s]">
+            <kbd class="font-Vast_shadow cursor-pointer">A</kbd>
+            <p class="w-full text-center uppercase cursor-pointer text-yellow-300 text-[15px] pt-1 font-semibold">clap</p>
+        </div>
+        <div data-key="83" id="sound" class="text-3xl text-center p-2 px-4 leading-6 rounded-[5px] bg-black bg-opacity-60 text-white border-4 border-black active:scale-[120%] cursor-pointer active:border-[rgb(212,212,90)] active:shadow-[2px_2px_50px_6px_rgb(212,212,90)] transition-all duration-[0.05s]">
+            <kbd class="font-Vast_shadow cursor-pointer">S</kbd>
+            <p class="w-full text-center uppercase cursor-pointer text-yellow-300 text-[15px] pt-1 font-semibold">boom</p>
+        </div>
+        <div data-key="68" id="sound" class=" text-center text-3xl p-2 px-4 leading-6 rounded-[5px] bg-black bg-opacity-60 text-white border-4 border-black active:scale-[120%] cursor-pointer active:border-[rgb(212,212,90)] active:shadow-[2px_2px_50px_6px_rgb(212,212,90)] transition-all duration-[0.05s]">
+            <kbd class="font-Vast_shadow cursor-pointer">D</kbd>
+            <p class="w-full text-center uppercase cursor-pointer text-yellow-300 text-[15px] pt-1 font-semibold">hihit</p>
+        </div>
+        <div data-key="70" id="sound" class=" text-center text-3xl p-2 px-4 leading-6 rounded-[5px] bg-black bg-opacity-60 text-white border-4 border-black active:scale-[120%] cursor-pointer active:border-[rgb(212,212,90)] active:shadow-[2px_2px_50px_6px_rgb(212,212,90)] transition-all duration-[0.05s]">
+            <kbd class="font-Vast_shadow cursor-pointer">F</kbd>
+            <p class="w-full text-center uppercase cursor-pointer text-yellow-300 text-[15px] pt-1 font-semibold">kick</p>
+        </div>
+        <div data-key="71" id="sound" class=" text-center text-3xl p-2 px-1 leading-6 rounded-[5px] bg-black bg-opacity-60 text-white border-4 border-black active:scale-[120%] cursor-pointer active:border-[rgb(212,212,90)] active:shadow-[2px_2px_50px_6px_rgb(212,212,90)] transition-all duration-[0.05s]">
+            <kbd class="font-Vast_shadow cursor-pointer">G</kbd>
+            <p class="w-full text-center uppercase cursor-pointer text-yellow-300 text-[15px] pt-1 font-semibold">openhat</p>
+        </div>
+        <div data-key="72" id="sound" class=" text-center text-3xl p-2 px-4 leading-6 rounded-[5px] bg-black bg-opacity-60 text-white border-4 border-black active:scale-[120%] cursor-pointer active:border-[rgb(212,212,90)] active:shadow-[2px_2px_50px_6px_rgb(212,212,90)] transition-all duration-[0.05s]">
+            <kbd class="font-Vast_shadow cursor-pointer">H</kbd>
+            <p class="w-full text-center uppercase cursor-pointer text-yellow-300 text-[15px] pt-1 font-semibold">ride</p>
+        </div>
+        <div data-key="74" id="sound" class=" text-center text-3xl p-2 px-2 leading-6 rounded-[5px] bg-black bg-opacity-60 text-white border-4 border-black active:scale-[120%] cursor-pointer active:border-[rgb(212,212,90)] active:shadow-[2px_2px_50px_6px_rgb(212,212,90)] transition-all duration-[0.05s]">
+            <kbd class="font-Vast_shadow cursor-pointer">J</kbd>
+            <p class="w-full text-center uppercase cursor-pointer text-yellow-300 text-[15px] pt-1 font-semibold">snare</p>
+        </div>
+        <div data-key="75" id="sound" class=" text-center text-3xl p-2 px-4 leading-6 rounded-[5px] bg-black bg-opacity-60 text-white border-4 border-black active:scale-[120%] cursor-pointer active:border-[rgb(212,212,90)] active:shadow-[2px_2px_50px_6px_rgb(212,212,90)] transition-all duration-[0.05s]">
+            <kbd class="font-Vast_shadow cursor-pointer">K</kbd>
+            <p class="w-full text-center uppercase cursor-pointer text-yellow-300 text-[15px] pt-1 font-semibold">tink</p>
+        </div>
+        <div data-key="76" id="sound" class=" text-center text-3xl p-2 px-4 leading-6 rounded-[5px] bg-black bg-opacity-60 text-white border-4 border-black active:scale-[120%] cursor-pointer active:border-[rgb(212,212,90)] active:shadow-[2px_2px_50px_6px_rgb(212,212,90)] transition-all duration-[0.05s]">
+            <kbd class="font-Vast_shadow cursor-pointer">L</kbd>
+            <p class="w-full text-center uppercase cursor-pointer text-yellow-300 text-[15px] pt-1 font-semibold">tom</p>
+        </div>
+    </section>
+    <div class="absolute border-4 text-white font-extrabold rounded-t-2xl border-black p-2 text-4xl top-20 font-Vast_shadow">
+        Play DJ Music
+    </div>
+    <div class="absolute bottom-0 text-[19px] bg-black leading-8 text-white w-full text-center">
+        <p class="animate-bounce">Developed by <a href="#" class="text-xl font-semibold underline italic">Souarbh Yalagod</a></p>
+    </div>
+
+    <audio data-key="65" src="./sounds/01 - JavaScript Drum Kit_sounds_boom.wav"></audio>
+    <audio data-key="83" src="./sounds/01 - JavaScript Drum Kit_sounds_clap.wav"></audio>
+    <audio data-key="68" src="./sounds/01 - JavaScript Drum Kit_sounds_hihat.wav"></audio>
+    <audio data-key="70" src="./sounds/01 - JavaScript Drum Kit_sounds_kick.wav"></audio>
+    <audio data-key="71" src="./sounds/01 - JavaScript Drum Kit_sounds_openhat.wav"></audio>
+    <audio data-key="72" src="./sounds/01 - JavaScript Drum Kit_sounds_ride.wav"></audio>
+    <audio data-key="74" src="./sounds/01 - JavaScript Drum Kit_sounds_snare.wav"></audio>
+    <audio data-key="75" src="./sounds/01 - JavaScript Drum Kit_sounds_tink.wav"></audio>
+    <audio data-key="76" src="./sounds/01 - JavaScript Drum Kit_sounds_tom.wav"></audio>
+</body>
+</html>
