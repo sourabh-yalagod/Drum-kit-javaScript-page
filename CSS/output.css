@@ -639,7 +639,15 @@ video {
 }
 
 .bg-DJ_image_BG {
-  background-image: url(../../Images/background.jpg);
+  background-image: url(../Images/background.jpg);
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .p-2 {
